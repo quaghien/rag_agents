@@ -1,0 +1,79 @@
+{
+    "store_info": {
+      "store_name": "TechLife",
+      "contact_info": {
+        "phone": "+84 123 456 789",
+        "email": "support@techlife.vn",
+        "address": "123 Tech Street, Hanoi, Vietnam",
+        "website": "https://www.techlife.vn"
+      },
+      "certifications": [
+        "ISO 9001:2015",
+        "Certified Partner of Apple, Samsung, Lenovo"
+      ]
+    },
+    "product_categories": [
+      {
+        "category_name": "Điện thoại",
+        "brands": [
+          {
+            "brand_name": "Apple",
+            "products": [
+              "iPhone 13 Pro",
+              "iPhone 12",
+              "iPhone SE",
+              "iPhone 11",
+              "iPhone XR"
+            ]
+          },
+          {
+            "brand_name": "Samsung",
+            "products": [
+              "Samsung Galaxy S21",
+              "Samsung Galaxy S20",
+              "Samsung Galaxy A72",
+              "Samsung Galaxy A52",
+              "Samsung Galaxy Note 20"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "Laptop",
+        "brands": [
+          {
+            "brand_name": "Apple",
+            "products": [
+              "MacBook Air M1",
+              "MacBook Pro 13-inch",
+              "MacBook Pro 16-inch",
+              "MacBook Air Intel",
+              "MacBook Pro 14-inch"
+            ]
+          },
+          {
+            "brand_name": "Dell",
+            "products": [
+              "Dell XPS 13",
+              "Dell Inspiron 15",
+              "Dell Latitude 7420",
+              "Dell Alienware m15",
+              "Dell XPS 15"
+            ]
+          }
+        ]
+      }
+    ],
+    "company_policies": {
+      "distributor_policy": {
+        "description": "Chúng tôi hợp tác với các nhà phân phối chính thức để cung cấp sản phẩm chính hãng với giá cả hợp lý. Các đối tác phân phối cần cam kết tuân thủ các tiêu chuẩn chất lượng của TechLife."
+      },
+      "wholesale_policy": {
+        "description": "Chính sách bán sỉ dành cho các cửa hàng, nhà phân phối có nhu cầu mua số lượng lớn. TechLife cung cấp giá bán sỉ hấp dẫn và hỗ trợ giao hàng nhanh chóng."
+      },
+      "return_policy": {
+        "description": "Chính sách đổi trả của TechLife cho phép khách hàng đổi sản phẩm trong vòng 30 ngày nếu sản phẩm bị lỗi hoặc không đúng như mô tả. Sản phẩm phải còn nguyên vẹn và đầy đủ phụ kiện."
+      }
+    }
+  }
+  

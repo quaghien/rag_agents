@@ -1,0 +1,21 @@
+name,price,description,url,category,brand
+iPhone 13 Pro,"30,000,000 VND","Điện thoại cao cấp của Apple với màn hình Super Retina XDR, chip A15 Bionic.",https://www.techlife.vn/iphone-13-pro,Điện thoại,Apple
+iPhone 12,"25,000,000 VND","iPhone 12 với màn hình OLED, chip A14 Bionic.",https://www.techlife.vn/iphone-12,Điện thoại,Apple
+iPhone SE,"14,000,000 VND",iPhone SE với chip A13 Bionic và màn hình Retina HD.,https://www.techlife.vn/iphone-se,Điện thoại,Apple
+iPhone 11,"18,000,000 VND","iPhone 11 với màn hình Liquid Retina HD, chip A13 Bionic.",https://www.techlife.vn/iphone-11,Điện thoại,Apple
+iPhone XR,"16,000,000 VND","iPhone XR với màn hình Liquid Retina, chip A12 Bionic.",https://www.techlife.vn/iphone-xr,Điện thoại,Apple
+Samsung Galaxy S21,"25,000,000 VND","Màn hình Dynamic AMOLED, chip Exynos 2100.",https://www.techlife.vn/samsung-galaxy-s21,Điện thoại,Samsung
+Samsung Galaxy S20,"20,000,000 VND","Màn hình Dynamic AMOLED, chip Exynos 990.",https://www.techlife.vn/samsung-galaxy-s20,Điện thoại,Samsung
+Samsung Galaxy A72,"13,000,000 VND","Màn hình Super AMOLED, chip Snapdragon 720G.",https://www.techlife.vn/samsung-galaxy-a72,Điện thoại,Samsung
+Samsung Galaxy A52,"11,000,000 VND","Màn hình Super AMOLED, chip Snapdragon 750G.",https://www.techlife.vn/samsung-galaxy-a52,Điện thoại,Samsung
+Samsung Galaxy Note 20,"28,000,000 VND","Màn hình Dynamic AMOLED, chip Exynos 990.",https://www.techlife.vn/samsung-galaxy-note-20,Điện thoại,Samsung
+MacBook Air M1,"28,000,000 VND","Laptop mỏng nhẹ với chip M1 của Apple, thời gian sử dụng pin lên tới 15 giờ.",https://www.techlife.vn/macbook-air-m1,Laptop,Apple
+MacBook Pro 13-inch,"35,000,000 VND","MacBook Pro với chip M1, màn hình Retina 13-inch.",https://www.techlife.vn/macbook-pro-13,Laptop,Apple
+MacBook Pro 16-inch,"45,000,000 VND",MacBook Pro với màn hình 16-inch và chip Intel Core i9.,https://www.techlife.vn/macbook-pro-16,Laptop,Apple
+MacBook Air Intel,"25,000,000 VND","MacBook Air với chip Intel Core i5, thời gian sử dụng pin 11 giờ.",https://www.techlife.vn/macbook-air-intel,Laptop,Apple
+MacBook Pro 14-inch,"38,000,000 VND",MacBook Pro 14-inch với chip M1 Pro và màn hình Liquid Retina XDR.,https://www.techlife.vn/macbook-pro-14,Laptop,Apple
+Dell XPS 13,"22,000,000 VND","Laptop với màn hình InfinityEdge, chip Intel Core i7.",https://www.techlife.vn/dell-xps-13,Laptop,Dell
+Dell Inspiron 15,"18,000,000 VND","Laptop với màn hình 15-inch, chip Intel Core i5.",https://www.techlife.vn/dell-inspiron-15,Laptop,Dell
+Dell Latitude 7420,"30,000,000 VND","Laptop doanh nhân với màn hình 14-inch, chip Intel Core i7.",https://www.techlife.vn/dell-latitude-7420,Laptop,Dell
+Dell Alienware m15,"35,000,000 VND","Laptop gaming với màn hình 15-inch, card đồ họa NVIDIA.",https://www.techlife.vn/dell-alienware-m15,Laptop,Dell
+Dell XPS 15,"32,000,000 VND","Laptop cao cấp với màn hình 15-inch 4K, chip Intel Core i9.",https://www.techlife.vn/dell-xps-15,Laptop,Dell
