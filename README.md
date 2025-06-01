@@ -12,7 +12,7 @@ To run or modify the Bot Sale agent, navigate to the `bot_sale` directory.
 
 **Click the image below to watch the demo video:**
 
-[![Bot Sale](https://img.youtube.com/vi/Fvc_qRYzTWo/0.jpg)](https://youtu.be/Fvc_qRYzTWo)
+[![Bot Sale](images/chatbot.png)](https://youtu.be/Fvc_qRYzTWo)
 
 
 ### 2. Mathematical Reasoning Agent
