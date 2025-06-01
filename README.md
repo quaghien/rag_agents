@@ -2,11 +2,28 @@
 
 Agents are autonomous software entities capable of perceiving their environment, processing information, and taking actions to achieve specific goals. In artificial intelligence, agents play a key role in building intelligent systems that can interact, plan, respond, and collaborate with other agents or humans.
 
+## Applications
+
+### 1.  Bot Sale
+
+( OpenAI Agents SDK + Guardrails input + Flow Agent(prompting) + Retrieval DB tool + RAG tool)
+
+To run or modify the Bot Sale agent, navigate to the `bot_sale` directory.
+
+**Click the image below to watch the demo video:**
+
+[![Bot Sale](https://img.youtube.com/vi/Fvc_qRYzTWo/0.jpg)](https://youtu.be/Fvc_qRYzTWo)
+
+
+### 2. Mathematical Reasoning Agent
+
+( LangGraph + react + reflection + re-planning)
+
+You can find the Jupyter Notebook for this agent here:  
+[Mathematical Reasoning Agent Notebook](bot_sale/math_agent.ipynb)
+
 ## 🤖 Table of Contents
 
-- [Applications](#applications)  
-  - [1. Bot Sale](#1-bot-sale)  
-  - [2. Mathematical Reasoning Agent](#2-mathematical-reasoning-agent)  
 - [5 Agentic AI Design Patterns](#5-agentic-ai-design-patterns)
   - [1. Reflection Pattern](#1-reflection-pattern)  
   - [2. Tool Use Pattern](#2-tool-use-pattern)  
@@ -37,24 +54,6 @@ Agents are autonomous software entities capable of perceiving their environment,
   - [9. Retrieval Techniques](#9-retrieval-techniques)  
   - [10. Cross-encoder and Bi-encoder](#10-cross-encoder-and-bi-encoder)  
   - [11. Graph RAG](#11-graph-rag)
-
-## Applications
-
-### 1.  Bot Sale
-
-( OpenAI Agents SDK + Guardrails input + Flow Agent(prompting) + Retrieval DB tool + RAG tool)
-
-To run or modify the Bot Sale agent, navigate to the `bot_sale` directory.
-
-[![Bot Sale](https://img.youtube.com/vi/Fvc_qRYzTWo/0.jpg)](https://youtu.be/Fvc_qRYzTWo)
-
-
-### 2. Mathematical Reasoning Agent
-
-( LangGraph + react + reflection + re-planning)
-
-You can find the Jupyter Notebook for this agent here:  
-[Mathematical Reasoning Agent Notebook](bot_sale/math_agent.ipynb)
 
 ## 5 Agentic AI Design Patterns
 
