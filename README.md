@@ -1,98 +1,149 @@
 # Agent Knowledge and Applications
 
-## Introduction
+Agents are autonomous software entities capable of perceiving their environment, processing information, and taking actions to achieve specific goals. In artificial intelligence, agents play a key role in building intelligent systems that can interact, plan, respond, and collaborate with other agents or humans.
 
-This document provides an overview of the key concepts related to Agents in computer science and artificial intelligence. Agents are autonomous software entities that perceive their environment, reason, and act to achieve specific goals.
-## Key Concepts
+## 🤖 Table of Contents
 
-### 5 Agentic AI Design Patterns
+- [Applications](#applications)  
+  - [1. Bot Sale](#1-bot-sale)  
+  - [2. Mathematical Reasoning Agent](#2-mathematical-reasoning-agent)  
+- [5 Agentic AI Design Patterns](#5-agentic-ai-design-patterns)
+  - [1. Reflection Pattern](#1-reflection-pattern)  
+  - [2. Tool Use Pattern](#2-tool-use-pattern)  
+  - [3. ReAct (Reason and Act) Pattern](#3-react-reason-and-act-pattern)  
+  - [4. Planning Pattern](#4-planning-pattern)  
+  - [5. Multi-Agent Pattern](#5-multi-agent-pattern)  
+- [Agent Concepts](#agent-concepts)  
+  - [1. Routing (Hand-off)](#1-routing-hand-off)  
+  - [2. Guardrails](#2-guardrails)  
+  - [3. Flow Agent](#3-flow-agent)  
+  - [4. AI Gateway](#4-ai-gateway)  
+  - [5. Tracing](#5-tracing)  
+  - [6. Streaming](#6-streaming)  
+  - [7. Parallelization](#7-parallelization)  
+  - [8. Human-in-the-loop](#8-human-in-the-loop)
+- [MCP (Model Context Protocol)](#mcp-model-context-protocol)
+- [Agent2Agent (A2A) Protocol](#agent2agent-a2a-protocol)
+- [ACP (Agent Communication Protocol)](#acp-agent-communication-protocol)
+- [Retrieval-Augmented Generation (RAG)](#retrieval-augmented-generation-rag)  
+  - [1. Create chunks](#1-create-chunks)  
+  - [2. Generate embeddings](#2-generate-embeddings)  
+  - [3. Store embeddings in a vector database](#3-store-embeddings-in-a-vector-database)  
+  - [4. User input query](#4-user-input-query)  
+  - [5. Embed the query](#5-embed-the-query)  
+  - [6. Retrieve similar chunks](#6-retrieve-similar-chunks)  
+  - [7. Re-rank the chunks](#7-re-rank-the-chunks)  
+  - [8. Chunking Methods](#8-chunking-methods)  
+  - [9. Retrieval Techniques](#9-retrieval-techniques)  
+  - [10. Cross-encoder and Bi-encoder](#10-cross-encoder-and-bi-encoder)  
+  - [11. Graph RAG](#11-graph-rag)
 
-1. Reflection pattern
+## Applications
 
-<img src="images/reflection.png" width="70%" alt="model">
+### 1.  Bot Sale
 
-2. Tool use pattern
+( OpenAI Agents SDK + Guardrails input + Flow Agent(prompting) + Retrieval DB tool + RAG tool)
 
-<img src="images/tool.png" width="70%" alt="model">
+To run or modify the Bot Sale agent, navigate to the `bot_sale` directory.
 
-3. ReAct (Reason and Act) pattern
+[![Bot Sale](https://img.youtube.com/vi/Fvc_qRYzTWo/0.jpg)](https://youtu.be/Fvc_qRYzTWo)
 
-<img src="images/react.png" width="70%" alt="model">
 
-4. Planning pattern
+### 2. Mathematical Reasoning Agent
 
-<img src="images/planning.png" width="70%" alt="model">
+( LangGraph + react + reflection + re-planning)
 
-5. Multi-agent pattern
+You can find the Jupyter Notebook for this agent here:  
+[Mathematical Reasoning Agent Notebook](bot_sale/math_agent.ipynb)
 
-<img src="images/multi-agent.png" width="70%" alt="model">
+## 5 Agentic AI Design Patterns
 
-### Agent Concepts
+### 1. Reflection pattern
 
-1. Routing (Hand-off)
+<img src="images/reflection.png" width="40%" alt="model">
+
+### 2. Tool use pattern
+
+<img src="images/tool.png" width="40%" alt="model">
+
+### 3. ReAct (Reason and Act) pattern
+
+<img src="images/react.png" width="40%" alt="model">
+
+### 4. Planning pattern
+
+<img src="images/planning.png" width="40%" alt="model">
+
+### 5. Multi-agent pattern
+
+<img src="images/multi-agent.png" width="40%" alt="model">
+
+## Agent Concepts
+
+### 1. Routing (Hand-off)
 
 Transferring tasks or control between agents to ensure seamless operation and fault tolerance.
 
-<img src="images/router.png" width="70%" alt="model">
+<img src="images/router.png" width="60%" alt="model">
 
 
-2. Guardrails
+### 2. Guardrails
 
 Rules and constraints to keep agents operating safely, ethically, and reliably.
 
-<img src="images/guardrail.png" width="70%" alt="model">
+<img src="images/guardrail.png" width="60%" alt="model">
 
 
-3. Flow Agent
+### 3. Flow Agent
 
 Manages the sequence and logic of tasks or conversations within an agent system.
 
-<img src="images/flow.png" width="70%" alt="model">
+<img src="images/flow.png" width="60%" alt="model">
 
 
-4. AI Gateway
+### 4. AI Gateway
 
 Interface connecting clients to multiple AI services, handling routing, security, and scaling.
 
-<img src="images/gateway.png" width="70%" alt="model">
+<img src="images/gateway.png" width="60%" alt="model">
 
 
-5. Tracing
+### 5. Tracing
 
 Logging detailed agent activities for debugging and performance monitoring.
 
-<img src="images/tracing.png" width="70%" alt="model">
+<img src="images/tracing.png" width="50%" alt="model">
 
 
-6. Streaming
+### 6. Streaming
 
 Real-time continuous data flow processing between agents or systems.
 
-<img src="images/streaming.png" width="70%" alt="model">
+<img src="images/streaming.png" width="50%" alt="model">
 
 
-7. Parallelization
+### 7. Parallelization
 
 Splitting tasks to run simultaneously across agents/processors for faster results.
 
-<img src="images/paralle.png" width="70%" alt="model">
+<img src="images/paralle.png" width="60%" alt="model">
 
 
-8. Human-in-the-loop
+### 8. Human-in-the-loop
 
 Involving humans in agent decisions or training for safety and accuracy.
 
-<img src="images/human.png" width="70%" alt="model">
+<img src="images/human.png" width="50%" alt="model">
 
-### MCP (Model Context Protocol)
+## MCP (Model Context Protocol)
 
 The USB-C port equivalent for agentic systems.
 
-<img src="images/mcp.png" width="70%" alt="model">
+<img src="images/mcp.png" width="50%" alt="model">
 
-<img src="images/mcp_contain.png" width="70%" alt="model">
+<img src="images/mcp_contain.png" width="60%" alt="model">
 
-<img src="images/json-rpc.png" width="70%" alt="model">
+<img src="images/json-rpc.png" width="50%" alt="model">
 
 Transport Mechanisms:
 
@@ -104,7 +155,7 @@ stdio: Communication over standard input/output streams
 
 - Well-suited for local servers like File, Git server, etc.
 
-<img src="images/stdio.png" width="70%" alt="model">
+<img src="images/stdio.png" width="60%" alt="model">
 
 HTTP with Server-Sent Events (SSE):
 
@@ -118,7 +169,7 @@ HTTP with Server-Sent Events (SSE):
 
 - Better suited for hosted servers.
 
-<img src="images/sse.png" width="70%" alt="model">
+<img src="images/sse.png" width="60%" alt="model">
 
 Further Reading on Model Context Protocol (MCP)
 
@@ -126,15 +177,15 @@ To deepen your understanding of the Model Context Protocol (MCP) and its applica
 
 - [What is Model Context Protocol (MCP): Explained](https://composio.dev/blog/what-is-model-context-protocol-mcp-explained/)
 
-- [Building an MCP Server from Scratch](https://dshills.medium.com/building-an-mcp-server-from-scratch-432f700b5e68)
+- [Building an MCP Server from Scratch](https://dshills.medium.com/building-an-mcp-server-from-scratch-432f600b5e68)
 
-### Agent2Agent (A2A) Protocol
+## Agent2Agent (A2A) Protocol
 
 - MCP provides agents with access to tools.
 
 - While A2A allows agents to connect with other agents and collaborate in teams.
 
-<img src="images/a2a.png" width="70%" alt="model">
+<img src="images/a2a.png" width="60%" alt="model">
 
 The A2A protocol is built upon established web standards, primarily using JSON-RPC 2.0 over HTTP(S) for request/response interactions and Server-Sent Events (SSE) for streaming.
 
@@ -142,7 +193,7 @@ The A2A protocol is built upon established web standards, primarily using JSON-R
 
 - Clients use this to find and communicate with the best agent for a task.
 
-<img src="images/a_card.png" width="70%" alt="model">
+<img src="images/a_card.png" width="50%" alt="model">
 
 Example `JSON Agent Card` Structure:
 ```
@@ -183,7 +234,7 @@ To deepen your understanding of the Agent2Agent (A2A) protocol and its applicati
 
 - [What is The Agent2Agent Protocol (A2A) and Why You Must Learn It Now](https://huggingface.co/blog/lynn-mikami/agent2agent)
 
-### ACP (Agent Communication Protocol)
+## ACP (Agent Communication Protocol)
 
 Agent Communication Protocol (ACP) is a more generalized framework for managing structured dialogue between agents. Think of it as the broad umbrella under which other protocols like A2A may reside.
 
@@ -204,7 +255,7 @@ MCP vs A2A vs ACP: A Comparative Breakdown
 
 Protocols Compared Side-by-Side:
 
-<img src="images/mcp_a2a_acp2.png" width="70%" alt="model">
+<img src="images/mcp_a2a_acp2.png" width="60%" alt="model">
 
 
 Choosing the Right Protocol for Your AI Stack  
@@ -224,67 +275,50 @@ To better understand the Agent Communication Protocol (ACP) and its role in mult
 
 - [What Every AI Engineer Should Know About A2A, MCP, and ACP](https://medium.com/@elisowski/what-every-ai-engineer-should-know-about-a2a-mcp-acp-8335a210a742)
 
-## Applications
-
-### 1.  Bot Sale
-
-( OpenAI Agents SDK + Guardrails input + Flow Agent(prompting) + Retrieval DB tool + RAG tool)
-
-To run or modify the Bot Sale agent, navigate to the `bot_sale` directory.
-
-<video controls src="images/demobotsale.mp4" width="670" height="370"></video>
-
-### 2. Mathematical Reasoning Agent
-
-( LangGraph + react + reflection + re-planning)
-
-You can find the Jupyter Notebook for this agent here:  
-[Mathematical Reasoning Agent Notebook](bot_sale/math_agent.ipynb)
-
 # Retrieval-Augmented Generation (RAG)
 
 ## Workflow of a RAG System
 
-<img src="images/rag1.png" width="70%" alt="model">
+<img src="images/rag1.png" width="60%" alt="model">
 
-<img src="images/rag2.png" width="70%" alt="model">
+<img src="images/rag2.png" width="60%" alt="model">
 
 ### 1. Create chunks
 
-<img src="images/chunk1.png" width="70%" alt="model">
+<img src="images/chunk1.png" width="60%" alt="model">
 
-<img src="images/chunk3.png" width="70%" alt="model">
+<img src="images/chunk3.png" width="60%" alt="model">
 
 ### 2. Generate embeddings
 
-<img src="images/embed1.png" width="70%" alt="model">
+<img src="images/embed1.png" width="60%" alt="model">
 
 ### 3. Store embeddings in a vector database
 
-<img src="images/store.png" width="70%" alt="model">
+<img src="images/store.png" width="60%" alt="model">
 
 ### 4. User input query
 
-<img src="images/input.png" width="70%" alt="model">
+<img src="images/input.png" width="60%" alt="model">
 
 
 ### 5. Embed the query
 
-<img src="images/query.png" width="70%" alt="model">
+<img src="images/query.png" width="60%" alt="model">
 
 ### 6. Retrieve similar chunks
 
-<img src="images/retrival.png" width="70%" alt="model">
+<img src="images/retrival.png" width="60%" alt="model">
 
-<img src="images/retrival2.png" width="70%" alt="model">
+<img src="images/retrival2.png" width="60%" alt="model">
 
 ### 7. Re-rank the chunks
 
-<img src="images/rerank.png" width="70%" alt="model">
+<img src="images/rerank.png" width="60%" alt="model">
 
 ### 8. Chunking Methods
 
-<img src="images/chunk2.png" width="70%" alt="model">
+<img src="images/chunk2.png" width="60%" alt="model">
 
 Further Reading on Chunking Strategies for RAG
 
@@ -305,9 +339,9 @@ Further Reading on Chunking Strategies for RAG
 | Information Density   | Less dense, focuses on key features               | Highly dense, capturing nuanced relationships     |
 | Example Applications  | Text search, Hybrid search                         | RAG, many general machine learning tasks          |
 
-<img src="images/sparse1.png" width="70%" alt="model">
+<img src="images/sparse1.png" width="60%" alt="model">
 
-<img src="images/sparse2.png" width="70%" alt="model">
+<img src="images/sparse2.png" width="60%" alt="model">
 
 Mixing or fusion
 
@@ -317,7 +351,7 @@ You can mix the results from both dense and sparse vectors, based purely on thei
 - Relative Score Fusion (RSF)
 - Distribution-Based Score Fusion (DBSF)
 
-<img src="images/search.png" width="70%" alt="model">
+<img src="images/search.png" width="60%" alt="model">
 
 Further Reading on Sparse Vectors
 
@@ -335,7 +369,7 @@ It’s commonly used for re-ranking because:
 
 - It improves final result quality by filtering out less relevant items.
 
-<img src="images/cross.png" width="70%" alt="model">
+<img src="images/cross.png" width="60%" alt="model">
 
 Bi-Encoder independently encodes the query and document into separate embeddings, then measures relevance using similarity metrics like cosine similarity.
 
@@ -347,14 +381,14 @@ It’s often used for initial retrieval because:
 
 - It’s less accurate than cross-encoder but much faster, suitable for filtering large collections before re-ranking.
 
-<img src="images/bi.png" width="70%" alt="model">
+<img src="images/bi.png" width="60%" alt="model">
 
 ### 11. Graph RAG
 
-<img src="images/graph1.png" width="70%" alt="model">
+<img src="images/graph1.png" width="60%" alt="model">
 
-<img src="images/graph2.png" width="70%" alt="model">
+<img src="images/graph2.png" width="60%" alt="model">
 
-<img src="images/graph3.png" width="70%" alt="model">
+<img src="images/graph3.png" width="60%" alt="model">
 
-<img src="images/graph4.png" width="70%" alt="model">
+<img src="images/graph4.png" width="60%" alt="model">
