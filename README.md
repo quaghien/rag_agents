@@ -1,6 +1,6 @@
 # Agent Knowledge and Applications
 
-Agents are autonomous software entities capable of perceiving their environment, processing information, and taking actions to achieve specific goals. In artificial intelligence, agents play a key role in building intelligent systems that can interact, plan, respond, and collaborate with other agents or humans.
+This repo provides a concise overview of key concepts and techniques for building Agentic AI systems. It covers common design patterns (like Reflection, ReAct, and Planning), core agent components (such as routing, guardrails, and streaming), and standard communication protocols (MCP, A2A, ACP). It also details the full Retrieval-Augmented Generation (RAG) pipeline—from chunk creation to re-ranking—and includes advanced methods like Graph RAG. Ideal for designing intelligent, interactive, and modular AI agents.
 
 ## Applications
 
